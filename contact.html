@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="test_A.css" />
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+              <li><a href="test_A.html">Accueil</a></li>
+              <li><a href="entreprise_testA.html">Entreprise</a></li>
+              <li><a href="realisations.html">Réalisations</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Contactez-nous</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post" class="contact-form">
+            <!-- Civilité -->
+            <label for="civilite">Civilité :</label>
+            <select id="civilite" name="civilite" required>
+                <option value="">--Sélectionnez votre civilité--</option>
+                <option value="monsieur">Monsieur</option>
+                <option value="madame">Madame</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <!-- Nom -->
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+
+            <!-- Prénom -->
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
+
+            <!-- Adresse postale -->
+            <label for="adresse">Adresse postale :</label>
+            <input type="text" id="adresse" name="adresse" required placeholder="Votre adresse postale">
+
+            <!-- Politique de confidentialité -->
+            <label>
+                <input type="checkbox" id="confidentialite" name="confidentialite" required>
+                J'accepte la <a href="#">politique de confidentialité</a>
+            </label>
+
+            <!-- Bouton de validation -->
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BloomPetals. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
